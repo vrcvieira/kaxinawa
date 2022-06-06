@@ -1,0 +1,526 @@
+!SESSION 2011-04-06 14:21:43.581 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.6.0_15
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.php.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.php.product
+
+!ENTRY org.eclipse.wst.xml.core 4 4 2011-04-06 14:40:13.405
+!MESSAGE IStructuredDocumentRegion management failed.
+!STACK 0
+org.eclipse.wst.xml.core.internal.document.StructuredDocumentRegionManagementException: IStructuredDocumentRegion management failed.
+	at org.eclipse.wst.xml.core.internal.document.XMLModelParser.removeStructuredDocumentRegion(XMLModelParser.java:2265)
+	at org.eclipse.wst.xml.core.internal.document.XMLModelParser.replaceStructuredDocumentRegions(XMLModelParser.java:2339)
+	at org.eclipse.wst.xml.core.internal.document.DOMModelImpl.nodesReplaced(DOMModelImpl.java:671)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument._fireEvent(BasicStructuredDocument.java:600)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.fireStructuredDocumentEvent(BasicStructuredDocument.java:1198)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.internalReplaceText(BasicStructuredDocument.java:1979)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.replaceText(BasicStructuredDocument.java:2419)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.replaceText(BasicStructuredDocument.java:2404)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.access$2(JobSafeStructuredDocument.java:1)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument$3.run(JobSafeStructuredDocument.java:141)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.sse.ui.EditorExecutionContext.execute(EditorExecutionContext.java:149)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.replaceText(JobSafeStructuredDocument.java:144)
+	at org.eclipse.wst.sse.ui.internal.StructuredDocumentToTextAdapter.replaceTextRange(StructuredDocumentToTextAdapter.java:1187)
+	at org.eclipse.swt.custom.StyledText.modifyContent(StyledText.java:7172)
+	at org.eclipse.swt.custom.StyledText.sendKeyEvent(StyledText.java:7986)
+	at org.eclipse.swt.custom.StyledText.doContent(StyledText.java:2459)
+	at org.eclipse.swt.custom.StyledText.handleKey(StyledText.java:5932)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5962)
+	at org.eclipse.swt.custom.StyledText$7.handleEvent(StyledText.java:5656)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1099)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1508)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4270)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4162)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4873)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2459)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3655)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:620)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1408)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1384)
+
+!ENTRY org.eclipse.wst.xml.core 4 4 2011-04-06 14:40:17.728
+!MESSAGE IStructuredDocumentRegion management failed.
+!STACK 0
+org.eclipse.wst.xml.core.internal.document.StructuredDocumentRegionManagementException: IStructuredDocumentRegion management failed.
+	at org.eclipse.wst.xml.core.internal.document.XMLModelParser.removeStructuredDocumentRegion(XMLModelParser.java:2265)
+	at org.eclipse.wst.xml.core.internal.document.XMLModelParser.changeStructuredDocumentRegion(XMLModelParser.java:546)
+	at org.eclipse.wst.xml.core.internal.document.XMLModelParser.changeTagName(XMLModelParser.java:578)
+	at org.eclipse.wst.xml.core.internal.document.XMLModelParser.changeRegion(XMLModelParser.java:347)
+	at org.eclipse.wst.xml.core.internal.document.DOMModelImpl.regionChanged(DOMModelImpl.java:725)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument._fireEvent(BasicStructuredDocument.java:542)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.fireStructuredDocumentEvent(BasicStructuredDocument.java:1180)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.internalReplaceText(BasicStructuredDocument.java:1964)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.replaceText(BasicStructuredDocument.java:2419)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.replaceText(BasicStructuredDocument.java:2404)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.access$2(JobSafeStructuredDocument.java:1)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument$3.run(JobSafeStructuredDocument.java:141)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.sse.ui.EditorExecutionContext.execute(EditorExecutionContext.java:149)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.replaceText(JobSafeStructuredDocument.java:144)
+	at org.eclipse.wst.sse.ui.internal.StructuredDocumentToTextAdapter.replaceTextRange(StructuredDocumentToTextAdapter.java:1187)
+	at org.eclipse.swt.custom.StyledText.modifyContent(StyledText.java:7172)
+	at org.eclipse.swt.custom.StyledText.sendKeyEvent(StyledText.java:7986)
+	at org.eclipse.swt.custom.StyledText.doBackspace(StyledText.java:2269)
+	at org.eclipse.swt.custom.StyledText.invokeAction(StyledText.java:6980)
+	at org.eclipse.swt.custom.StyledText.handleKey(StyledText.java:5936)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5962)
+	at org.eclipse.swt.custom.StyledText$7.handleEvent(StyledText.java:5656)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1099)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1508)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4270)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4162)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4873)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2459)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3655)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:620)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1408)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1384)
+!SESSION 2011-05-22 11:01:16.388 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.6.0_15
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.php.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.php.product
+
+!ENTRY org.eclipse.jface.text 2 0 2011-05-22 11:03:44.319
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.extractScriptdoc(ProposalInfo.java:106)
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.computeInfo(ProposalInfo.java:84)
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.getInfo(ProposalInfo.java:67)
+	at org.eclipse.dltk.ui.text.completion.AbstractScriptCompletionProposal.getAdditionalProposalInfo(AbstractScriptCompletionProposal.java:440)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jface.text 2 0 2011-05-22 11:03:44.837
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.extractScriptdoc(ProposalInfo.java:106)
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.computeInfo(ProposalInfo.java:84)
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.getInfo(ProposalInfo.java:67)
+	at org.eclipse.dltk.ui.text.completion.AbstractScriptCompletionProposal.getAdditionalProposalInfo(AbstractScriptCompletionProposal.java:440)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jface.text 2 0 2011-05-22 11:03:44.927
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.extractScriptdoc(ProposalInfo.java:106)
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.computeInfo(ProposalInfo.java:84)
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.getInfo(ProposalInfo.java:67)
+	at org.eclipse.dltk.ui.text.completion.AbstractScriptCompletionProposal.getAdditionalProposalInfo(AbstractScriptCompletionProposal.java:440)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jface.text 2 0 2011-05-22 11:03:51.877
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.extractScriptdoc(ProposalInfo.java:106)
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.computeInfo(ProposalInfo.java:84)
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.getInfo(ProposalInfo.java:67)
+	at org.eclipse.dltk.ui.text.completion.AbstractScriptCompletionProposal.getAdditionalProposalInfo(AbstractScriptCompletionProposal.java:440)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jface.text 2 0 2011-05-22 11:03:53.084
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.extractScriptdoc(ProposalInfo.java:106)
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.computeInfo(ProposalInfo.java:84)
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.getInfo(ProposalInfo.java:67)
+	at org.eclipse.dltk.ui.text.completion.AbstractScriptCompletionProposal.getAdditionalProposalInfo(AbstractScriptCompletionProposal.java:440)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jface.text 2 0 2011-05-22 11:04:17.941
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.extractScriptdoc(ProposalInfo.java:106)
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.computeInfo(ProposalInfo.java:84)
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.getInfo(ProposalInfo.java:67)
+	at org.eclipse.dltk.ui.text.completion.AbstractScriptCompletionProposal.getAdditionalProposalInfo(AbstractScriptCompletionProposal.java:440)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jface.text 2 0 2011-05-22 11:04:23.425
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.extractScriptdoc(ProposalInfo.java:106)
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.computeInfo(ProposalInfo.java:84)
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.getInfo(ProposalInfo.java:67)
+	at org.eclipse.dltk.ui.text.completion.AbstractScriptCompletionProposal.getAdditionalProposalInfo(AbstractScriptCompletionProposal.java:440)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jface.text 2 0 2011-05-22 11:04:25.014
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.extractScriptdoc(ProposalInfo.java:106)
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.computeInfo(ProposalInfo.java:84)
+	at org.eclipse.dltk.ui.text.completion.ProposalInfo.getInfo(ProposalInfo.java:67)
+	at org.eclipse.dltk.ui.text.completion.AbstractScriptCompletionProposal.getAdditionalProposalInfo(AbstractScriptCompletionProposal.java:440)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(AdditionalInfoController.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.php.core 4 10001 2011-05-22 11:04:28.326
+!MESSAGE PHPCore plugin internal error
+!STACK 1
+org.eclipse.dltk.core.ModelException:   does not exist
+	at org.eclipse.dltk.internal.core.ModelOperation.runOperation(ModelOperation.java:760)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:397)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:367)
+	at org.eclipse.php.internal.core.codeassist.CompletionCompanion.getSuperTypeHierarchy(CompletionCompanion.java:90)
+	at org.eclipse.php.internal.core.codeassist.strategies.MethodNameStrategy.apply(MethodNameStrategy.java:80)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:109)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:64)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+!SUBENTRY 1 org.eclipse.dltk.core 4 969 2011-05-22 11:04:28.328
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.php.core 4 10001 2011-05-22 11:04:28.756
+!MESSAGE PHPCore plugin internal error
+!STACK 1
+org.eclipse.dltk.core.ModelException:   does not exist
+	at org.eclipse.dltk.internal.core.ModelOperation.runOperation(ModelOperation.java:760)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:397)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:367)
+	at org.eclipse.php.internal.core.codeassist.CompletionCompanion.getSuperTypeHierarchy(CompletionCompanion.java:90)
+	at org.eclipse.php.internal.core.codeassist.strategies.MethodNameStrategy.apply(MethodNameStrategy.java:80)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:109)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:64)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+!SUBENTRY 1 org.eclipse.dltk.core 4 969 2011-05-22 11:04:28.756
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.php.core 4 10001 2011-05-22 11:04:30.830
+!MESSAGE PHPCore plugin internal error
+!STACK 1
+org.eclipse.dltk.core.ModelException:   does not exist
+	at org.eclipse.dltk.internal.core.ModelOperation.runOperation(ModelOperation.java:760)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:397)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:367)
+	at org.eclipse.php.internal.core.codeassist.CompletionCompanion.getSuperTypeHierarchy(CompletionCompanion.java:90)
+	at org.eclipse.php.internal.core.codeassist.strategies.MethodNameStrategy.apply(MethodNameStrategy.java:80)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:109)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:64)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+!SUBENTRY 1 org.eclipse.dltk.core 4 969 2011-05-22 11:04:30.830
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.php.core 4 10001 2011-05-22 11:04:31.734
+!MESSAGE PHPCore plugin internal error
+!STACK 1
+org.eclipse.dltk.core.ModelException:   does not exist
+	at org.eclipse.dltk.internal.core.ModelOperation.runOperation(ModelOperation.java:760)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:397)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:367)
+	at org.eclipse.php.internal.core.codeassist.CompletionCompanion.getSuperTypeHierarchy(CompletionCompanion.java:90)
+	at org.eclipse.php.internal.core.codeassist.strategies.MethodNameStrategy.apply(MethodNameStrategy.java:80)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:109)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:64)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+!SUBENTRY 1 org.eclipse.dltk.core 4 969 2011-05-22 11:04:31.734
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.php.core 4 10001 2011-05-22 11:04:33.613
+!MESSAGE PHPCore plugin internal error
+!STACK 1
+org.eclipse.dltk.core.ModelException:   does not exist
+	at org.eclipse.dltk.internal.core.ModelOperation.runOperation(ModelOperation.java:760)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:397)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:367)
+	at org.eclipse.php.internal.core.codeassist.CompletionCompanion.getSuperTypeHierarchy(CompletionCompanion.java:90)
+	at org.eclipse.php.internal.core.codeassist.strategies.MethodNameStrategy.apply(MethodNameStrategy.java:80)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:109)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:64)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+!SUBENTRY 1 org.eclipse.dltk.core 4 969 2011-05-22 11:04:33.614
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.php.core 4 10001 2011-05-22 11:04:34.813
+!MESSAGE PHPCore plugin internal error
+!STACK 1
+org.eclipse.dltk.core.ModelException:   does not exist
+	at org.eclipse.dltk.internal.core.ModelOperation.runOperation(ModelOperation.java:760)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:397)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:367)
+	at org.eclipse.php.internal.core.codeassist.CompletionCompanion.getSuperTypeHierarchy(CompletionCompanion.java:90)
+	at org.eclipse.php.internal.core.codeassist.strategies.MethodNameStrategy.apply(MethodNameStrategy.java:80)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:109)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:64)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+!SUBENTRY 1 org.eclipse.dltk.core 4 969 2011-05-22 11:04:34.813
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.php.core 4 10001 2011-05-22 11:04:35.270
+!MESSAGE PHPCore plugin internal error
+!STACK 1
+org.eclipse.dltk.core.ModelException:   does not exist
+	at org.eclipse.dltk.internal.core.ModelOperation.runOperation(ModelOperation.java:760)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:397)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:367)
+	at org.eclipse.php.internal.core.codeassist.CompletionCompanion.getSuperTypeHierarchy(CompletionCompanion.java:90)
+	at org.eclipse.php.internal.core.codeassist.strategies.MethodNameStrategy.apply(MethodNameStrategy.java:80)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:109)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:64)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+!SUBENTRY 1 org.eclipse.dltk.core 4 969 2011-05-22 11:04:35.271
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.php.core 4 10001 2011-05-22 11:04:35.790
+!MESSAGE PHPCore plugin internal error
+!STACK 1
+org.eclipse.dltk.core.ModelException:   does not exist
+	at org.eclipse.dltk.internal.core.ModelOperation.runOperation(ModelOperation.java:760)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:397)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:367)
+	at org.eclipse.php.internal.core.codeassist.CompletionCompanion.getSuperTypeHierarchy(CompletionCompanion.java:90)
+	at org.eclipse.php.internal.core.codeassist.strategies.MethodNameStrategy.apply(MethodNameStrategy.java:80)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:109)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:64)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+!SUBENTRY 1 org.eclipse.dltk.core 4 969 2011-05-22 11:04:35.791
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.php.core 4 10001 2011-05-22 11:04:36.522
+!MESSAGE PHPCore plugin internal error
+!STACK 1
+org.eclipse.dltk.core.ModelException:   does not exist
+	at org.eclipse.dltk.internal.core.ModelOperation.runOperation(ModelOperation.java:760)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:397)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:367)
+	at org.eclipse.php.internal.core.codeassist.CompletionCompanion.getSuperTypeHierarchy(CompletionCompanion.java:90)
+	at org.eclipse.php.internal.core.codeassist.strategies.MethodNameStrategy.apply(MethodNameStrategy.java:80)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:109)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:64)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+!SUBENTRY 1 org.eclipse.dltk.core 4 969 2011-05-22 11:04:36.523
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.php.core 4 10001 2011-05-22 11:04:37.140
+!MESSAGE PHPCore plugin internal error
+!STACK 1
+org.eclipse.dltk.core.ModelException:   does not exist
+	at org.eclipse.dltk.internal.core.ModelOperation.runOperation(ModelOperation.java:760)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:397)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:367)
+	at org.eclipse.php.internal.core.codeassist.CompletionCompanion.getSuperTypeHierarchy(CompletionCompanion.java:90)
+	at org.eclipse.php.internal.core.codeassist.strategies.MethodNameStrategy.apply(MethodNameStrategy.java:80)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:109)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:64)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+!SUBENTRY 1 org.eclipse.dltk.core 4 969 2011-05-22 11:04:37.140
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.php.core 4 10001 2011-05-22 11:04:37.808
+!MESSAGE PHPCore plugin internal error
+!STACK 1
+org.eclipse.dltk.core.ModelException:   does not exist
+	at org.eclipse.dltk.internal.core.ModelOperation.runOperation(ModelOperation.java:760)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:397)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:367)
+	at org.eclipse.php.internal.core.codeassist.CompletionCompanion.getSuperTypeHierarchy(CompletionCompanion.java:90)
+	at org.eclipse.php.internal.core.codeassist.strategies.MethodNameStrategy.apply(MethodNameStrategy.java:80)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:109)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:64)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+!SUBENTRY 1 org.eclipse.dltk.core 4 969 2011-05-22 11:04:37.809
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.php.core 4 10001 2011-05-22 11:04:39.037
+!MESSAGE PHPCore plugin internal error
+!STACK 1
+org.eclipse.dltk.core.ModelException:   does not exist
+	at org.eclipse.dltk.internal.core.ModelOperation.runOperation(ModelOperation.java:760)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:397)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:367)
+	at org.eclipse.php.internal.core.codeassist.CompletionCompanion.getSuperTypeHierarchy(CompletionCompanion.java:90)
+	at org.eclipse.php.internal.core.codeassist.strategies.MethodNameStrategy.apply(MethodNameStrategy.java:80)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:109)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:64)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+!SUBENTRY 1 org.eclipse.dltk.core 4 969 2011-05-22 11:04:39.037
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.php.core 4 10001 2011-05-22 11:04:40.009
+!MESSAGE PHPCore plugin internal error
+!STACK 1
+org.eclipse.dltk.core.ModelException:   does not exist
+	at org.eclipse.dltk.internal.core.ModelOperation.runOperation(ModelOperation.java:760)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:397)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:367)
+	at org.eclipse.php.internal.core.codeassist.CompletionCompanion.getSuperTypeHierarchy(CompletionCompanion.java:90)
+	at org.eclipse.php.internal.core.codeassist.strategies.MethodNameStrategy.apply(MethodNameStrategy.java:80)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:109)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:64)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+!SUBENTRY 1 org.eclipse.dltk.core 4 969 2011-05-22 11:04:40.009
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.php.core 4 10001 2011-05-22 11:04:41.196
+!MESSAGE PHPCore plugin internal error
+!STACK 1
+org.eclipse.dltk.core.ModelException:   does not exist
+	at org.eclipse.dltk.internal.core.ModelOperation.runOperation(ModelOperation.java:760)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:397)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:367)
+	at org.eclipse.php.internal.core.codeassist.CompletionCompanion.getSuperTypeHierarchy(CompletionCompanion.java:90)
+	at org.eclipse.php.internal.core.codeassist.strategies.MethodNameStrategy.apply(MethodNameStrategy.java:80)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:109)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:64)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+!SUBENTRY 1 org.eclipse.dltk.core 4 969 2011-05-22 11:04:41.196
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.php.core 4 10001 2011-05-22 11:04:41.623
+!MESSAGE PHPCore plugin internal error
+!STACK 1
+org.eclipse.dltk.core.ModelException:   does not exist
+	at org.eclipse.dltk.internal.core.ModelOperation.runOperation(ModelOperation.java:760)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:397)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:367)
+	at org.eclipse.php.internal.core.codeassist.CompletionCompanion.getSuperTypeHierarchy(CompletionCompanion.java:90)
+	at org.eclipse.php.internal.core.codeassist.strategies.MethodNameStrategy.apply(MethodNameStrategy.java:80)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:109)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:64)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+!SUBENTRY 1 org.eclipse.dltk.core 4 969 2011-05-22 11:04:41.624
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.php.core 4 10001 2011-05-22 11:05:03.162
+!MESSAGE PHPCore plugin internal error
+!STACK 1
+org.eclipse.dltk.core.ModelException:   does not exist
+	at org.eclipse.dltk.internal.core.ModelOperation.runOperation(ModelOperation.java:760)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:397)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:367)
+	at org.eclipse.php.internal.core.codeassist.CompletionCompanion.getSuperTypeHierarchy(CompletionCompanion.java:90)
+	at org.eclipse.php.internal.core.codeassist.strategies.MethodNameStrategy.apply(MethodNameStrategy.java:80)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:109)
+	at org.eclipse.php.internal.core.codeassist.PHPCompletionEngine.complete(PHPCompletionEngine.java:64)
+	at org.eclipse.dltk.internal.core.Openable$CompletionThread.run(Openable.java:467)
+!SUBENTRY 1 org.eclipse.dltk.core 4 969 2011-05-22 11:05:03.162
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.php.core 4 10001 2011-05-22 11:05:58.834
+!MESSAGE PHPCore plugin internal error
+!STACK 1
+org.eclipse.dltk.core.ModelException:   does not exist
+	at org.eclipse.dltk.internal.core.ModelOperation.runOperation(ModelOperation.java:760)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:397)
+	at org.eclipse.dltk.internal.core.SourceType.newSupertypeHierarchy(SourceType.java:367)
+	at org.eclipse.php.internal.core.typeinference.PHPModelUtils.getSuperClasses(PHPModelUtils.java:1190)
+	at org.eclipse.php.internal.core.typeinference.PHPModelUtils.getSuperTypeHierarchyField(PHPModelUtils.java:1232)
+	at org.eclipse.php.internal.core.typeinference.PHPModelUtils.getTypeHierarchyField(PHPModelUtils.java:1331)
+	at org.eclipse.php.internal.core.typeinference.PHPModelUtils.getTypeHierarchyField(PHPModelUtils.java:1352)
+	at org.eclipse.php.internal.core.codeassist.PHPSelectionEngine.internalResolve(PHPSelectionEngine.java:627)
+	at org.eclipse.php.internal.core.codeassist.PHPSelectionEngine.select(PHPSelectionEngine.java:140)
+	at org.eclipse.dltk.internal.core.Openable.codeSelect(Openable.java:578)
+	at org.eclipse.dltk.internal.core.AbstractSourceModule.codeSelect(AbstractSourceModule.java:85)
+	at org.eclipse.dltk.internal.core.AbstractSourceModule.codeSelect(AbstractSourceModule.java:76)
+	at org.eclipse.php.internal.ui.actions.OpenTypeHierarchyAction.getSelectionModelElement(OpenTypeHierarchyAction.java:197)
+	at org.eclipse.php.internal.ui.actions.OpenTypeHierarchyAction.isEnabled(OpenTypeHierarchyAction.java:147)
+	at org.eclipse.php.internal.ui.actions.OpenTypeHierarchyAction.selectionChanged(OpenTypeHierarchyAction.java:115)
+	at org.eclipse.php.internal.ui.actions.OpenTypeHierarchyAction.selectionChanged(OpenTypeHierarchyAction.java:125)
+	at org.eclipse.php.internal.ui.actions.SelectionDispatchAction.dispatchSelectionChanged(SelectionDispatchAction.java:180)
+	at org.eclipse.php.internal.ui.actions.SelectionDispatchAction.selectionChanged(SelectionDispatchAction.java:175)
+	at org.eclipse.wst.sse.ui.StructuredTextEditor$4.run(StructuredTextEditor.java:590)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.sse.ui.StructuredTextEditor$StructuredSelectionProvider.fireSelectionChanged(StructuredTextEditor.java:588)
+	at org.eclipse.wst.sse.ui.StructuredTextEditor$StructuredSelectionProvider.handlePostSelectionChanged(StructuredTextEditor.java:669)
+	at org.eclipse.wst.sse.ui.StructuredTextEditor$3.selectionChanged(StructuredTextEditor.java:562)
+	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2745)
+	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2693)
+	at org.eclipse.jface.text.TextViewer$5.run(TextViewer.java:2672)
+	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4167)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3256)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2459)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3655)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:620)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1408)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1384)
+!SUBENTRY 1 org.eclipse.dltk.core 4 969 2011-05-22 11:05:58.835
+!MESSAGE   does not exist
